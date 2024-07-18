@@ -13,15 +13,15 @@ void loop() {
   reedStateDoor = digitalRead(reedSwitchPinDoor);  // Lê o estado do primeiro reed switch
   reedStateHandle = digitalRead(reedSwitchPinHandle);  // Lê o estado do segundo reed switch
   if (reedStateDoor == LOW) {   // Se o reed switch está fechado (ímã próximo)
-    Serial.println("Reed switch 1 fechado");
+    Serial.println("Reed switch Porta fechado");
   } else {
-    Serial.println("Reed switch 1 aberto");
+    Serial.println("Reed switch Porta aberto");
   }
 
   if (reedStateHandle == LOW) {   // Se o reed switch está fechado (ímã próximo)
-    Serial.println("Reed switch 2 fechado");
+    Serial.println("Reed switch Maçaneta fechado");
   } else {
-    Serial.println("Reed switch 2 aberto");
+    Serial.println("Reed switch Maçaneta aberto");
   }
 
   delay(500);  // Atraso para evitar excesso de mensagens no monitor serial
