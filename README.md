@@ -13,3 +13,6 @@ Vinícius Marques.
 
 Utilizando uma placa esp-wroom-32, uma cãmera de conexão wifi, um módulo sensor detector de som e sensores reed(magneticos).
 
+# Modelo 3d do projeto:
+
+https://www.tinkercad.com/things/bVlidKPCycF-porta-da-perdicao-?sharecode=SLachPDsLe55kJrwsGybzWJE2PDlpBTwS8NxBpHJU58
