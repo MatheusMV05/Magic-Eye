@@ -1,10 +1,10 @@
 #include <WiFi.h>
 
-const char* ssid = "your_SSID";
-const char* password = "your_PASSWORD";
+const char* ssid = "uaifai-apolo";
+const char* password = "bemvindoaocesar";
 
 // Substitua pelo endereço IP da sua ESP-CAM
-const char* camIP = "192.168.1.XX";
+const char* camIP = "172.26.165.157";
 
 void setup() {
   Serial.begin(115200);
