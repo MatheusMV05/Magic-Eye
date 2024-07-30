@@ -11,6 +11,8 @@ typedef struct struct_message {
 
 struct_message incomingData;
 
+bool gravando = false;
+
 void OnDataRecv(const esp_now_recv_info_t *info, const uint8_t *data, int len) {
   memcpy(&incomingData, data, sizeof(incomingData));
   Serial.print("Dados recebidos - Maçaneta: ");
@@ -18,8 +20,10 @@ void OnDataRecv(const esp_now_recv_info_t *info, const uint8_t *data, int len) {
   Serial.print(", Porta: ");
   Serial.println(incomingData.estadoPorta);
 
-  if (incomingData.estadoMaçaneta == LOW && incomingData.estadoPorta == HIGH) {
+  if (incomingData.estadoMaçaneta == HIGH && incomingData.estadoPorta == LOW && !gravando) {
     iniciarGravacao();
+  } else if (incomingData.estadoPorta == HIGH && gravando) {
+    pararGravacao();
   }
 }
 
@@ -83,7 +87,8 @@ void loop() {
 }
 
 void iniciarGravacao() {
-  camera_fb_t * fb = esp_camera_fb_get();
+  gravando = true;
+  camera_fb_t *fb = esp_camera_fb_get();
   if (!fb) {
     Serial.println("Falha ao capturar a imagem");
     return;
@@ -101,4 +106,9 @@ void iniciarGravacao() {
 
   file.close();
   esp_camera_fb_return(fb);
+}
+
+void pararGravacao() {
+  gravando = false;
+  Serial.println("Gravação parada");
 }
