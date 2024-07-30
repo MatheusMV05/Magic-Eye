@@ -3,7 +3,7 @@
 #include <WiFi.h>
 
 // Endereço MAC da ESP-CAM (receptor)
-uint8_t broadcastAddress[] = { 0x24, 0x0A, 0xC4, 0x00, 0x00, 0x00 };  // Altere para o endereço MAC da sua ESP-CAM
+uint8_t broadcastAddress[] = { 0xEC, 0x64, 0xC9, 0x5E, 0xF0, 0x20 };  // Altere para o endereço MAC da sua ESP-CAM
 
 // Estrutura para os dados a serem enviados
 typedef struct struct_message {
