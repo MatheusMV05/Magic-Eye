@@ -2,7 +2,7 @@
 
 ## 📌 Sobre o Projeto
 
-**Migic-Eye** é um projeto desenvolvido por alunos da **Cesar School** com foco em **análise comportamental assistida por Inteligência Artificial (IA)**. O sistema foi projetado para capturar e registrar, em vídeo, as reações de pessoas impedidas de acessar uma determinada oficina da faculdade em momentos inapropriados.
+**Migic-Eye** é um projeto desenvolvido por alunos da **Cesar School**. O sistema foi projetado para capturar e registrar, em vídeo, as reações de pessoas impedidas de acessar uma determinada oficina da faculdade em momentos inapropriados.
 
 ---
 
