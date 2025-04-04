@@ -1,8 +1,8 @@
-# 🎯 Migic-Eye ✅
+# 🎯 Magic-Eye ✅
 
 ## 📌 Sobre o Projeto
 
-**Migic-Eye** é um projeto desenvolvido por alunos da **Cesar School**. O sistema foi projetado para capturar e registrar, em vídeo, as reações de pessoas impedidas de acessar uma determinada oficina da faculdade em momentos inapropriados.
+**Magic-Eye** é um projeto desenvolvido por alunos da **Cesar School**. O sistema foi projetado para capturar e registrar, em vídeo, as reações de pessoas impedidas de acessar uma determinada oficina da faculdade em momentos inapropriados.
 
 ---
 
@@ -10,7 +10,6 @@
 
 Monitorar tentativas de entrada não autorizadas em um ambiente específico, registrando:
 - Vídeos das reações dos indivíduos;
-- Detecção de som (reclamações, tentativas de diálogo, etc.);
 - Ativação por sensores magnéticos (reed switches) nas portas.
 
 ---
